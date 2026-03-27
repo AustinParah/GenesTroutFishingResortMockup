@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gene's Trout Fishing Resort | World-Class Fishing on the North Fork River</title>
+    <link rel="icon" type="image/png" href="https://www.genestroutfishingresort.com/templates/genestroutfishingresort.com/images/logos/logo.png?v=0.5">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alpha+Slab+One&family=Oswald:wght@700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'moss-green': '#2d5a27',
+                        'moss-green-dark': '#1e3d1a',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                        'alpha': ['"Alpha Slab One"', 'cursive'],
+                        'oswald': ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .nav-transparent {
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+        }
+        .nav-scrolled {
+            background-color: #2d5a27;
+        }
+        .hero-video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+        .hero-video-container iframe {
+            width: 100vw;
+            height: 56.25vw;
+            min-height: 100vh;
+            min-width: 177.77vh;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+        .logo-text-line1 { font-family: 'Alpha Slab One', cursive; line-height: 1; }
+        .logo-text-line2 { font-family: 'Oswald', sans-serif; line-height: 1; text-transform: uppercase; }
+        .logo-text-line3 { font-family: 'Alpha Slab One', cursive; line-height: 1; font-style: italic; }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 nav-transparent px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-white">
+            <div class="flex items-center space-x-4">
+                <img src="https://www.genestroutfishingresort.com/templates/genestroutfishingresort.com/images/logos/logo.png?v=0.5" alt="Gene's Logo" class="h-16 w-auto drop-shadow-lg">
+                <div class="flex flex-col text-left">
+                    <span class="logo-text-line1 text-[12px] tracking-wider">Gene's</span>
+                    <strong class="logo-text-line2 text-xl tracking-tight">Trout Fishing Resort</strong>
+                    <span class="logo-text-line3 text-[8px] tracking-[0.2em] opacity-90">On the North Fork River</span>
+                </div>
+            </div>
+            <div class="hidden lg:flex space-x-8 font-medium">
+                <a href="index.html" class="hover:text-gray-300 transition-colors">Home</a>
+                <a href="accommodations.html" class="hover:text-gray-300 transition-colors">Accommodations</a>
+                <a href="#" class="hover:text-gray-300 transition-colors">Fishing</a>
+                <a href="#" class="hover:text-gray-300 transition-colors">Gallery</a>
+                <a href="#" class="hover:text-gray-300 transition-colors">Contact</a>
+            </div>
+            <a href="#" class="bg-white text-moss-green px-6 py-2 rounded-full font-bold hover:bg-gray-100 transition-all shadow-lg">
+                BOOK NOW
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="hero-video-container">
+            <iframe 
+                src="https://player.vimeo.com/video/920090134?background=1&autoplay=1&loop=1&muted=1&badge=0&autopause=0&player_id=0&app_id=58479" 
+                frameborder="0" 
+                allow="autoplay; fullscreen; picture-in-picture" 
+                title="Gene's Trout Fishing Resort Background Video">
+            </iframe>
+        </div>
+        <div class="absolute inset-0 bg-black/30 z-10"></div>
+        <div class="relative z-20 text-center text-white px-4">
+            <h1 class="font-serif text-5xl md:text-7xl mb-6 drop-shadow-lg">Experience World-Class Trout Fishing</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-light drop-shadow-md">
+                Your premier riverfront escape on the crystal clear North Fork River in Arkansas.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="accommodations.html" class="bg-moss-green hover:bg-moss-green-dark text-white px-8 py-4 rounded-md font-bold text-lg transition-all transform hover:scale-105 shadow-xl">
+                    Explore Our Cabins
+                </a>
+                <a href="#" class="bg-white/10 hover:bg-white/20 backdrop-blur-sm border-2 border-white text-white px-8 py-4 rounded-md font-bold text-lg transition-all shadow-xl">
+                    Our Fishing Trips
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-moss-green font-bold tracking-widest uppercase text-sm">Welcome to the Resort</span>
+                <h2 class="font-serif text-4xl md:text-5xl mt-4 mb-6 leading-tight">Authentic Arkansas Hospitality & Unmatched Beauty</h2>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    Nestled along the banks of the North Fork River, Gene's Trout Fishing Resort has been a family-owned tradition for generations. Whether you're an avid angler chasing trophy brown trout or a family seeking a peaceful riverfront getaway, our resort offers the perfect blend of comfort and nature.
+                </p>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <div class="text-3xl font-bold text-moss-green mb-1">30+</div>
+                        <div class="text-slate-500 font-medium uppercase text-xs tracking-wider">Riverfront Cabins</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-moss-green mb-1">40 Years</div>
+                        <div class="text-slate-500 font-medium uppercase text-xs tracking-wider">Of Tradition</div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://www.genestroutfishingresort.com/plugins/show_image.php?id=1383" alt="Gene's Resort Cabins" class="rounded-lg shadow-2xl w-full h-[400px] object-cover">
+                <div class="absolute -bottom-8 -left-8 bg-moss-green p-8 text-white rounded-lg hidden md:block shadow-xl">
+                    <p class="italic text-lg">"The best trout fishing experience in the Ozarks!"</p>
+                    <p class="mt-2 font-bold">— Happy Guest</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="py-24 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="font-serif text-4xl mb-4">Everything You Need for a Perfect Trip</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto">From professional guide services to fully equipped kitchens, we've thought of every detail.</p>
+        </div>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Feature 1 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-moss-green/10 text-moss-green rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                </div>
+                <h3 class="font-bold text-xl mb-3">Riverfront Living</h3>
+                <p class="text-slate-600">Wake up to the sound of the river. Every cabin features a private deck overlooking the water.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-moss-green/10 text-moss-green rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3 class="font-bold text-xl mb-3">Guided Fishing</h3>
+                <p class="text-slate-600">Expert guides will show you the best spots to catch world-class trout on the North Fork.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-moss-green/10 text-moss-green rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2m0 10V7" />
+                    </svg>
+                </div>
+                <h3 class="font-bold text-xl mb-3">Boat Rentals</h3>
+                <p class="text-slate-600">High-quality Jon boats and motors available right at our private resort docks.</p>
+            </div>
+            <!-- Feature 4 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-moss-green/10 text-moss-green rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
+                    </svg>
+                </div>
+                <h3 class="font-bold text-xl mb-3">Free WiFi</h3>
+                <p class="text-slate-600">Stay connected with high-speed internet available throughout the resort grounds.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-moss-green text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div>
+                <div class="flex items-center space-x-4 mb-8">
+                    <img src="https://www.genestroutfishingresort.com/templates/genestroutfishingresort.com/images/logos/logo.png?v=0.5" alt="Gene's Logo" class="h-20 w-auto bg-white/10 p-2 rounded shadow-inner">
+                    <div class="flex flex-col text-left">
+                        <span class="logo-text-line1 text-[14px] tracking-wider text-white">Gene's</span>
+                        <strong class="logo-text-line2 text-2xl tracking-tight text-white">Trout Fishing Resort</strong>
+                        <span class="logo-text-line3 text-[10px] tracking-[0.2em] opacity-90 text-white">On the North Fork River</span>
+                    </div>
+                </div>
+                <p class="text-gray-200 mb-6">Providing world-class fishing experiences on the North Fork River for over 40 years.</p>
+                <div class="flex space-x-4">
+                    <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">F</div>
+                    <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">I</div>
+                    <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">X</div>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-bold mb-6 uppercase tracking-wider text-sm">Quick Links</h5>
+                <ul class="space-y-4 text-gray-200">
+                    <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
+                    <li><a href="accommodations.html" class="hover:text-white transition-colors">Accommodations</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Guided Trips</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Boat Rentals</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Resort Map</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold mb-6 uppercase tracking-wider text-sm">Contact Us</h5>
+                <ul class="space-y-4 text-gray-200">
+                    <li class="flex items-start">
+                        <span class="mr-3 mt-1">📍</span>
+                        123 Resort Lane<br>Salesville, AR 72653
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3">📞</span>
+                        (870) 499-5381
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3">✉️</span>
+                        info@genestroutresort.com
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold mb-6 uppercase tracking-wider text-sm">Newsletter</h5>
+                <p class="text-gray-200 mb-4 text-sm">Get fishing reports and special offers delivered to your inbox.</p>
+                <form class="flex">
+                    <input type="email" placeholder="Email Address" class="bg-white/10 border border-white/20 px-4 py-2 rounded-l-md w-full focus:outline-none focus:bg-white/20">
+                    <button class="bg-white text-moss-green px-4 py-2 rounded-r-md font-bold hover:bg-gray-100 transition-colors">JOIN</button>
+                </form>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 text-center text-gray-300 text-sm">
+            &copy; 2026 Gene's Trout Fishing Resort. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+                navbar.classList.remove('nav-transparent');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+                navbar.classList.add('nav-transparent');
+            }
+        });
+    </script>
+</body>
+</html>

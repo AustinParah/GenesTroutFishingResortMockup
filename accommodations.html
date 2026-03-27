@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accommodations | Gene's Trout Fishing Resort</title>
+    <link rel="icon" type="image/png" href="https://www.genestroutfishingresort.com/templates/genestroutfishingresort.com/images/logos/logo.png?v=0.5">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alpha+Slab+One&family=Oswald:wght@700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'moss-green': '#2d5a27',
+                        'moss-green-dark': '#1e3d1a',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                        'alpha': ['"Alpha Slab One"', 'cursive'],
+                        'oswald': ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .logo-text-line1 { font-family: 'Alpha Slab One', cursive; line-height: 1; }
+        .logo-text-line2 { font-family: 'Oswald', sans-serif; line-height: 1; text-transform: uppercase; }
+        .logo-text-line3 { font-family: 'Alpha Slab One', cursive; line-height: 1; font-style: italic; }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased">
+
+    <!-- Navigation (Solid for this page) -->
+    <nav class="bg-moss-green w-full z-50 px-6 py-4 sticky top-0">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-white">
+            <div class="flex items-center space-x-4">
+                <img src="https://www.genestroutfishingresort.com/templates/genestroutfishingresort.com/images/logos/logo.png?v=0.5" alt="Gene's Logo" class="h-12 w-auto bg-white/10 p-1 rounded">
+                <div class="flex flex-col text-left">
+                    <span class="logo-text-line1 text-[10px] tracking-wider">Gene's</span>
+                    <strong class="logo-text-line2 text-lg tracking-tight">Trout Fishing Resort</strong>
+                    <span class="logo-text-line3 text-[7px] tracking-[0.2em] opacity-90">On the North Fork River</span>
+                </div>
+            </div>
+            <div class="hidden lg:flex space-x-8 font-medium">
+                <a href="index.html" class="hover:text-gray-300 transition-colors">Home</a>
+                <a href="accommodations.html" class="text-gray-300 transition-colors">Accommodations</a>
+                <a href="#" class="hover:text-gray-300 transition-colors">Fishing</a>
+                <a href="#" class="hover:text-gray-300 transition-colors">Gallery</a>
+                <a href="#" class="hover:text-gray-300 transition-colors">Contact</a>
+            </div>
+            <a href="#" class="bg-white text-moss-green px-6 py-2 rounded-full font-bold hover:bg-gray-100 transition-all shadow-lg text-sm">
+                BOOK NOW
+            </a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-slate-100 py-16 px-6 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="font-serif text-4xl md:text-5xl mb-4">Your Home on the River</h1>
+            <p class="text-slate-600 max-w-2xl mx-auto text-lg">Choose from our variety of riverfront cabins and lodges, designed for comfort and the ultimate fishing escape.</p>
+        </div>
+    </header>
+
+    <!-- Resort Policies Section -->
+    <section class="py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100">
+                <div class="bg-moss-green px-8 py-4 text-white font-bold uppercase tracking-widest text-sm">
+                    Resort Policies & Amenities
+                </div>
+                <div class="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="flex items-start">
+                        <div class="text-3xl mr-4">🚭</div>
+                        <div>
+                            <h4 class="font-bold mb-1">Smoke-Free</h4>
+                            <p class="text-sm text-slate-500">No smoking inside any units. Permitted on outside decks only.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-3xl mr-4">🐾</div>
+                        <div>
+                            <h4 class="font-bold mb-1">Pet-Friendly</h4>
+                            <p class="text-sm text-slate-500">Many of our cabins welcome pets. Look for the pet-friendly label!</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-3xl mr-4">🧺</div>
+                        <div>
+                            <h4 class="font-bold mb-1">Linens Provided</h4>
+                            <p class="text-sm text-slate-500">All bed and bath linens are provided for your comfort.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-3xl mr-4">🍳</div>
+                        <div>
+                            <h4 class="font-bold mb-1">Full Kitchens</h4>
+                            <p class="text-sm text-slate-500">Equipped with stoves, microwaves, and all cooking utensils.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-6 text-center text-sm text-slate-500 italic">
+                    Note: Swimming is strongly discouraged due to cold water and dangerous currents from the Norfork Dam.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodations Grid -->
+    <section class="py-12 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <!-- Cabin 1 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-100 flex flex-col">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://www.genestroutfishingresort.com/plugins/show_image.php?id=1383" alt="Cabin 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-moss-green">RIVERFRONT</div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="font-serif text-2xl mb-2">Cabin 1</h3>
+                        <p class="text-moss-green font-semibold text-sm mb-4 uppercase tracking-wider">Small Riverfront Cabin</p>
+                        <div class="flex flex-wrap gap-4 mb-6 text-sm text-slate-500 font-medium">
+                            <span class="flex items-center"><span class="mr-1">👤</span> Sleeps 4</span>
+                            <span class="flex items-center"><span class="mr-1">🛏️</span> 1 BR + Loft</span>
+                            <span class="flex items-center"><span class="mr-1">🚿</span> 1 BA</span>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-6 line-clamp-3">
+                            Features a beautiful patio view of the North Fork River. Includes a Queen bed, living room with sofa bed, and a cozy upstairs loft.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0 mt-auto">
+                        <a href="#" class="block w-full text-center bg-moss-green hover:bg-moss-green-dark text-white font-bold py-3 rounded-md transition-colors shadow-lg">
+                            VIEW DETAILS
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cabin 2 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-100 flex flex-col">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://www.genestroutfishingresort.com/plugins/show_image.php?id=1389" alt="Cabin 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-moss-green">RIVERFRONT</div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="font-serif text-2xl mb-2">Cabin 2</h3>
+                        <p class="text-moss-green font-semibold text-sm mb-4 uppercase tracking-wider">Small Riverfront Cabin</p>
+                        <div class="flex flex-wrap gap-4 mb-6 text-sm text-slate-500 font-medium">
+                            <span class="flex items-center"><span class="mr-1">👤</span> Sleeps 4</span>
+                            <span class="flex items-center"><span class="mr-1">🛏️</span> 1 BR + Loft</span>
+                            <span class="flex items-center"><span class="mr-1">🚿</span> 1 BA</span>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-6 line-clamp-3">
+                            Identical layout to Cabin 1 with its own private deck overlooking the river. Perfect for a small family or fishing buddies.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0 mt-auto">
+                        <a href="#" class="block w-full text-center bg-moss-green hover:bg-moss-green-dark text-white font-bold py-3 rounded-md transition-colors shadow-lg">
+                            VIEW DETAILS
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cabin 6 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-100 flex flex-col">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://www.genestroutfishingresort.com/plugins/show_image.php?id=1231" alt="Cabin 6" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-moss-green text-white px-3 py-1 rounded-full text-xs font-bold">PET FRIENDLY</div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="font-serif text-2xl mb-2">Cabin 6</h3>
+                        <p class="text-moss-green font-semibold text-sm mb-4 uppercase tracking-wider">Riverfront Duplex</p>
+                        <div class="flex flex-wrap gap-4 mb-6 text-sm text-slate-500 font-medium">
+                            <span class="flex items-center"><span class="mr-1">👤</span> Sleeps 6</span>
+                            <span class="flex items-center"><span class="mr-1">🛏️</span> 2 BR</span>
+                            <span class="flex items-center"><span class="mr-1">🚿</span> 1 BA</span>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-6 line-clamp-3">
+                            Spacious duplex unit with direct river access. Pet-friendly with a large living area and fully equipped kitchen.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0 mt-auto">
+                        <a href="#" class="block w-full text-center bg-moss-green hover:bg-moss-green-dark text-white font-bold py-3 rounded-md transition-colors shadow-lg">
+                            VIEW DETAILS
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Lodge 7 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-100 flex flex-col lg:col-span-2">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <div class="relative overflow-hidden h-64 lg:h-full">
+                            <img src="https://www.genestroutfishingresort.com/plugins/show_image.php?id=1237" alt="Lodge 7" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-amber-600 text-white px-3 py-1 rounded-full text-xs font-bold tracking-widest">PREMIUM LODGE</div>
+                        </div>
+                        <div class="p-8 flex flex-col">
+                            <h3 class="font-serif text-3xl mb-2">Lodge 7</h3>
+                            <p class="text-moss-green font-semibold text-sm mb-4 uppercase tracking-wider">3-Story Executive Lodge</p>
+                            <div class="flex flex-wrap gap-4 mb-6 text-sm text-slate-500 font-medium">
+                                <span class="flex items-center"><span class="mr-1">👤</span> Sleeps 16-20</span>
+                                <span class="flex items-center"><span class="mr-1">🛏️</span> 5 BR</span>
+                                <span class="flex items-center"><span class="mr-1">🚿</span> 4 BA</span>
+                                <span class="flex items-center"><span class="mr-1">🎱</span> Pool Table</span>
+                            </div>
+                            <p class="text-slate-600 text-sm mb-8">
+                                Our grandest facility. Three floors of luxury including a regulation slate pool table, massive wrap-around deck, and plenty of space for large corporate groups or family reunions.
+                            </p>
+                            <div class="mt-auto">
+                                <a href="#" class="inline-block bg-moss-green hover:bg-moss-green-dark text-white font-bold px-8 py-3 rounded-md transition-colors shadow-lg">
+                                    VIEW LODGE 7 DETAILS
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lodge 10 Placeholder -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-slate-100 flex flex-col">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://www.genestroutfishingresort.com/plugins/show_image.php?id=1242" alt="Lodge 10" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">NO PETS</div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="font-serif text-2xl mb-2">Lodge 10</h3>
+                        <p class="text-moss-green font-semibold text-sm mb-4 uppercase tracking-wider">2-Story Riverfront Lodge</p>
+                        <div class="flex flex-wrap gap-4 mb-6 text-sm text-slate-500 font-medium">
+                            <span class="flex items-center"><span class="mr-1">👤</span> Sleeps 16-20</span>
+                            <span class="flex items-center"><span class="mr-1">🛏️</span> 4 BR</span>
+                            <span class="flex items-center"><span class="mr-1">🚿</span> 4 BA</span>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-6 line-clamp-3">
+                            A stunning two-story lodge featuring a gas fireplace, slate pool table, and expansive river views. Note: This is a strictly no-pet facility.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0 mt-auto">
+                        <a href="#" class="block w-full text-center bg-moss-green hover:bg-moss-green-dark text-white font-bold py-3 rounded-md transition-colors shadow-lg">
+                            VIEW DETAILS
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-moss-green text-white py-16 px-6 mt-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div>
+                <div class="flex items-center space-x-4 mb-8 text-white">
+                    <img src="https://www.genestroutfishingresort.com/templates/genestroutfishingresort.com/images/logos/logo.png?v=0.5" alt="Gene's Logo" class="h-20 w-auto bg-white/10 p-2 rounded shadow-inner">
+                    <div class="flex flex-col text-left">
+                        <span class="logo-text-line1 text-[14px] tracking-wider text-white">Gene's</span>
+                        <strong class="logo-text-line2 text-2xl tracking-tight text-white">Trout Fishing Resort</strong>
+                        <span class="logo-text-line3 text-[10px] tracking-[0.2em] opacity-90 text-white">On the North Fork River</span>
+                    </div>
+                </div>
+                <p class="text-gray-200 mb-6">Providing world-class fishing experiences on the North Fork River for over 40 years.</p>
+                <div class="flex space-x-4">
+                    <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">F</div>
+                    <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">I</div>
+                    <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">X</div>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-bold mb-6 uppercase tracking-wider text-sm">Quick Links</h5>
+                <ul class="space-y-4 text-gray-200">
+                    <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                    <li><a href="accommodations.html" class="hover:text-white transition-colors">Accommodations</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Guided Trips</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Boat Rentals</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Resort Map</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold mb-6 uppercase tracking-wider text-sm">Contact Us</h5>
+                <ul class="space-y-4 text-gray-200">
+                    <li class="flex items-start">
+                        <span class="mr-3 mt-1">📍</span>
+                        123 Resort Lane<br>Salesville, AR 72653
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3">📞</span>
+                        (870) 499-5381
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3">✉️</span>
+                        info@genestroutresort.com
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold mb-6 uppercase tracking-wider text-sm">Newsletter</h5>
+                <p class="text-gray-200 mb-4 text-sm">Get fishing reports and special offers delivered to your inbox.</p>
+                <form class="flex">
+                    <input type="email" placeholder="Email Address" class="bg-white/10 border border-white/20 px-4 py-2 rounded-l-md w-full focus:outline-none focus:bg-white/20">
+                    <button class="bg-white text-moss-green px-4 py-2 rounded-r-md font-bold hover:bg-gray-100 transition-colors">JOIN</button>
+                </form>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 text-center text-gray-300 text-sm">
+            &copy; 2026 Gene's Trout Fishing Resort. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
