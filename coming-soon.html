@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | Gene's Trout Fishing Resort</title>
+    <link rel="icon" type="image/png" href="https://www.genestroutfishingresort.com/templates/genestroutfishingresort.com/images/logos/logo.png?v=0.5">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alpha+Slab+One&family=Oswald:wght@700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'moss-green': '#2d5a27',
+                        'moss-green-dark': '#1e3d1a',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                        'alpha': ['"Alpha Slab One"', 'cursive'],
+                        'oswald': ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .logo-text-line1 { font-family: 'Alpha Slab One', cursive; line-height: 1; }
+        .logo-text-line2 { font-family: 'Oswald', sans-serif; line-height: 1; text-transform: uppercase; }
+        .logo-text-line3 { font-family: 'Alpha Slab One', cursive; line-height: 1; font-style: italic; }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="bg-moss-green w-full z-50 px-6 py-4 sticky top-0">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-white">
+            <div class="flex items-center space-x-4">
+                <a href="index.html" class="flex items-center space-x-4">
+                    <img src="https://www.genestroutfishingresort.com/templates/genestroutfishingresort.com/images/logos/logo.png?v=0.5" alt="Gene's Logo" class="h-12 w-auto bg-white/10 p-1 rounded">
+                    <div class="flex flex-col text-left">
+                        <span class="logo-text-line1 text-[10px] tracking-wider">Gene's</span>
+                        <strong class="logo-text-line2 text-base sm:text-lg tracking-tight whitespace-nowrap">Trout Fishing Resort</strong>
+                        <span class="logo-text-line3 text-[7px] tracking-[0.2em] opacity-90">On the North Fork River</span>
+                    </div>
+                </a>
+            </div>
+            <div class="hidden lg:flex space-x-8 font-medium">
+                <a href="index.html" class="hover:text-gray-300 transition-colors">Home</a>
+                <a href="accommodations.html" class="hover:text-gray-300 transition-colors">Accommodations</a>
+                <a href="coming-soon.html" class="hover:text-gray-300 transition-colors">Fishing</a>
+                <a href="coming-soon.html" class="hover:text-gray-300 transition-colors">Gallery</a>
+                <a href="coming-soon.html" class="hover:text-gray-300 transition-colors">Contact</a>
+            </div>
+            <a href="coming-soon.html" class="hidden sm:block bg-white text-moss-green px-6 py-2 rounded-full font-bold hover:bg-gray-100 transition-all shadow-lg text-sm">
+                BOOK NOW
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center bg-slate-50 py-24 px-6 text-center">
+        <div class="max-w-2xl mx-auto">
+            <div class="mb-8 inline-flex items-center justify-center w-24 h-24 bg-moss-green/10 text-moss-green rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </div>
+            <h1 class="font-serif text-4xl md:text-5xl mb-6">Coming Soon</h1>
+            <p class="text-xl text-slate-600 mb-12">
+                We're currently working on this part of the new experience. Please check back soon for more details about our world-class trout fishing on the North Fork River.
+            </p>
+            <a href="index.html" class="inline-block bg-moss-green hover:bg-moss-green-dark text-white font-bold px-8 py-4 rounded-md transition-all shadow-lg">
+                Return to Home
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-moss-green text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div>
+                <div class="flex items-center space-x-4 mb-8 text-white">
+                    <img src="https://www.genestroutfishingresort.com/templates/genestroutfishingresort.com/images/logos/logo.png?v=0.5" alt="Gene's Logo" class="h-20 w-auto bg-white/10 p-2 rounded shadow-inner">
+                    <div class="flex flex-col text-left">
+                        <span class="logo-text-line1 text-[14px] tracking-wider text-white">Gene's</span>
+                        <strong class="logo-text-line2 text-xl sm:text-2xl tracking-tight text-white whitespace-nowrap">Trout Fishing Resort</strong>
+                        <span class="logo-text-line3 text-[10px] tracking-[0.2em] opacity-90 text-white">On the North Fork River</span>
+                    </div>
+                </div>
+                <p class="text-gray-200 mb-6">Providing world-class fishing experiences on the North Fork River for over 40 years.</p>
+                <div class="flex space-x-4">
+                    <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">F</div>
+                    <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">I</div>
+                    <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">X</div>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-bold mb-6 uppercase tracking-wider text-sm">Quick Links</h5>
+                <ul class="space-y-4 text-gray-200">
+                    <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                    <li><a href="accommodations.html" class="hover:text-white transition-colors">Accommodations</a></li>
+                    <li><a href="coming-soon.html" class="hover:text-white transition-colors">Guided Trips</a></li>
+                    <li><a href="coming-soon.html" class="hover:text-white transition-colors">Boat Rentals</a></li>
+                    <li><a href="coming-soon.html" class="hover:text-white transition-colors">Resort Map</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold mb-6 uppercase tracking-wider text-sm">Contact Us</h5>
+                <ul class="space-y-4 text-gray-200">
+                    <li class="flex items-start">
+                        <span class="mr-3 mt-1">📍</span>
+                        123 Resort Lane<br>Salesville, AR 72653
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3">📞</span>
+                        (870) 499-5381
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3">✉️</span>
+                        info@genestroutresort.com
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold mb-6 uppercase tracking-wider text-sm">Newsletter</h5>
+                <p class="text-gray-200 mb-4 text-sm">Get fishing reports and special offers delivered to your inbox.</p>
+                <form class="flex">
+                    <input type="email" placeholder="Email Address" class="bg-white/10 border border-white/20 px-4 py-2 rounded-l-md w-full focus:outline-none focus:bg-white/20">
+                    <button class="bg-white text-moss-green px-4 py-2 rounded-r-md font-bold hover:bg-gray-100 transition-colors">JOIN</button>
+                </form>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 text-center text-gray-300 text-sm">
+            &copy; 2026 Gene's Trout Fishing Resort. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
